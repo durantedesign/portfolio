@@ -1,0 +1,317 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* ========== HEADER ========== */
+header {
+  background: #404040;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  height: 50px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  color: #6df28e;
+  opacity: 0.8;
+}
+
+
+/* ========== HERO ========== */
+.hero {
+  background: #f9f9f9;
+  color: #404040;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* ========== SEÇÃO SOBRE E CONTATO ========== */
+.sobre,
+.contato {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.sobre h2,
+.contato h2,
+.portfolio h2,
+.skills h2,
+.identidades h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+/* ========== SEÇÃO EXPERIÊNCIA ========== */
+.experiencia {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.experiencia h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.job {
+  background: #f0f0f0;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.job h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.job span {
+  font-weight: normal;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.job p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+
+/* ========== SEÇÃO SKILLS ========== */
+.skills {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.skills img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: inline-block;
+}
+
+
+/* ========== SEÇÃO PORTFÓLIO / SWIPER ========== */
+.portfolio {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.swiper {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.03);
+}
+
+/* Paginação */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+  background: #999;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #6df28e;
+}
+
+/* ========== IDENTIDADES VISUAIS ========== */
+.identidades {
+  padding: 60px 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.grid-identidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-identidades img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.grid-identidades img:hover {
+  transform: scale(1.03);
+}
+
+/* ========== HOBBIES ========== */
+#fotografia {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+#fotografia h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#fotografia .descricao-foto {
+  text-align: center;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #555;
+}
+
+#fotografia h3 {
+  font-size: 1.5rem;
+  margin: 40px 0 20px 0;
+}
+
+.hobby-gallery.masonry {
+  column-count: 3;
+  column-gap: 16px;
+  margin-top: 60px; /* Alternativa: espaçamento antes das imagens */
+}
+
+.hobby-gallery.masonry img {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Contato - container */
+.contato {
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Ícones */
+.contato-icones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.contato-icones a {
+  font-size: 36px; /* Tamanho dos ícones */
+  color: #222; /* Cor inicial */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.contato-icones a:hover {
+  color: #7c4dff; /* Cor de destaque */
+  transform: scale(1.1); /* Leve zoom no hover */
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #404040;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+/* ========== RESPONSIVO HERO ========== */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .hero-text {
+    max-width: 500px;
+  }
+}
